@@ -1,0 +1,29 @@
+sudo apt-get install msmtp-mta
+nvim ~/.msmtprc
+
+```
+#Gmail account
+
+defaults
+#change the location of the log file to any desired location.
+logfile ~/msmtp.log
+account gmail
+auth on
+host smtp.gmail.com
+from <yourmail@gmail.com>
+auth on
+tls on
+tls_trust_file /usr/share/ca-certificates/mozilla/Equifax_Secure_CA.crt
+user <yourmail@gmail.com>
+password <your-password>
+port 587
+#set gmail as your default mail server.
+account default : gmail
+```
+chmod 600 .msmtprc
+sudo apt-get install heirloom-mailx
+nvim ~/.mailrc
+```
+set sendmail="/usr/bin/msmtp"
+set message-sendmail-extra-arguments="-a gmail"
+```
