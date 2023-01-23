@@ -1,0 +1,11 @@
+# How to install
+The following commands will download the ghcup binary into ~/.ghcup/bin (or C:\ghcup\bin on windows) and then run it to interactively install the Haskell Toolchain. These commands should be run as non-root/non-admin user. 
+For Linux, macOS, FreeBSD or Windows Subsystem 2 for Linux, run this in a terminal:
+
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+
+Linux Ubuntu
+The following distro packages are required:
+
+build-essential curl libffi-dev libffi6 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
+
