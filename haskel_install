@@ -1,3 +1,4 @@
+R2ks6dc2EBNkGoIEcQOP3uphOnc00hljwWd
 # How to install
 The following commands will download the ghcup binary into ~/.ghcup/bin (or C:\ghcup\bin on windows) and then run it to interactively install the Haskell Toolchain. These commands should be run as non-root/non-admin user. 
 For Linux, macOS, FreeBSD or Windows Subsystem 2 for Linux, run this in a terminal:
